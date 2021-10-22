@@ -1,11 +1,13 @@
+// import { ref, reactive } from '@vue/composition-api'
 import { ref } from '@vue/composition-api'
 
-function couterIncrement(value) {
+function counterIncrement(value) {
     const counter = ref(value);
     function add() {
-        counter.value++;
+      counter.value++;
     }
-    return { counterR: counter, add }
 
+    return { counterN : counter, add }
 }
-export default { couterIncrement } 
+
+export default { counterIncrement }

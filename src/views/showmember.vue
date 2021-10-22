@@ -1,23 +1,19 @@
 <template>
-  <div class="about">
-    <h1>My Data</h1>
+  <div class="showmember">
+    <h1>All Members</h1>
     <b-table striped hover :items="allUsers"> </b-table>
   </div>
 </template>
 
 <script>
-
-
 export default {
-  name: "about",
-
-  computed: {
+  name : "Showmember",
+  methods : {
     allUsers() {
       return this.$store.getters.getAllUsers;
     },
-  },
-  methods: {
-  },
+  }
+
 }
 </script>
 
