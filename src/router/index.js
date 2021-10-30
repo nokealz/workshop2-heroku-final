@@ -1,12 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-// import Student from '@/components/Student.vue'
-// import Page1 from '@/components/Page1.vue'
-// import Page2 from '@/components/Page2.vue'
-// import Members from '@/components/Members.vue'
-// import Employee from '@/components/Employee.vue'
-import showmember from '@/views/showmember.vue'
+import Home from '../views/Home.vue' 
+import Page1 from '@/views/Page1.vue'
+import Page2 from '@/views/Page2.vue' 
+//import Table from '@/views/Table.vue'
 
 import {BootstrapVue , IconsPlugin} from 'bootstrap-vue'
 import "bootstrap/dist/css/bootstrap.css"
@@ -32,13 +29,26 @@ const routes = [
   {
     path: '/show',
     name: 'Show',
-    component: showmember
+    component: Page1
   },
   {
     path: '/about',
     name: 'About',
     component: () => import('../views/About.vue')
+    
+  },
+  {
+    path: '/Page2',
+    name: 'Page2',
+    component: Page2
+  },
+  {
+    path: '/Table',
+    name: 'Table',
+    component: () => import('../views/Table.vue')
   }
+
+  
 ]
 
 const router = new VueRouter({

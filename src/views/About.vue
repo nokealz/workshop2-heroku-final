@@ -1,13 +1,11 @@
 <template>
   <div class="about">
-    <h1>My Data</h1>
+    <!-- <h1>My Data</h1> -->
     <b-table striped hover :items="allUsers"> </b-table>
   </div>
 </template>
 
 <script>
-
-
 export default {
   name: "about",
 
@@ -16,11 +14,9 @@ export default {
       return this.$store.getters.getAllUsers;
     },
   },
-  methods: {
-  },
-}
+  methods: {},
+};
 </script>
 
 <style>
-
 </style>

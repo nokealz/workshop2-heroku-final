@@ -1,31 +1,30 @@
 <template>
+
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> /
-      <router-link to="/show">Members</router-link> /
-      <!-- <router-link to="/">Student</router-link> -->
-      <router-link to="/about">About</router-link>
+    <div class="alert alert-primary" role="alert">
+      <div class="btn-group" role="group" aria-label="Basic example">
+      <router-link to="/" show variant="primary">Home</router-link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<router-link to="/about">History</router-link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<router-link to="/show">Calculator </router-link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<router-link to="/Page2">ใบลาหยุดงาน</router-link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<router-link to="/Table">ประวัติการลา</router-link>
+    </div>
     </div>
     <router-view/>
   </div>
 </template>
 
+
 <script>
 export default {
-  name: 'App',
+  name: "App",
   data() {
-    return {
-      
-    };
+    return {};
   },
 
-  mounted() {
-    
-  },
+  mounted() {},
 
-  methods: {
-    
-  },
+  methods: {},
 };
 </script>
 
@@ -48,6 +47,6 @@ export default {
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #087eec;
 }
 </style>
