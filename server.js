@@ -6,7 +6,7 @@ const app = express()
 
 app.use('/', serveStatic(path.join(__dirname, '/dist')))
 
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 3212
 app.listen(port)
 
 console.log('bg start... port: ' + port)
